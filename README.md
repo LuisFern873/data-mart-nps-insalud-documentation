@@ -10,7 +10,7 @@ La **primera fase (MVP)** se enfoca en el **análisis de encuestas NPS**, consid
 La fuente de datos es **Amazon RDS**, y los procesos **ETL (Extract, Transform, Load)** extraen, transforman y cargan la información hacia **Amazon Redshift**.
 
 #### Arquitectura propuesta
-![Data pipeline 1](sources/data-pipeline-1.png)
+![Data pipeline 1](data-pipeline-1.png)
 
 ---
 
@@ -83,7 +83,7 @@ Antes de la migración, toda la información de todas las sedes se almacenaba ú
 ---
 
 #### Modelo actual en Amazon RDS
-![Modelo entidad-relación NPS en Amazon RDS](sources/rds-nps.png)
+![Modelo entidad-relación NPS en Amazon RDS](rds-nps.png)
 
 ---
 
@@ -120,7 +120,7 @@ La **granularidad** define el nivel más bajo de detalle dentro de una tabla de 
 - `dim_fecha`
 
 #### Esquema estrella propuesto
-![Star schema NPS en Amazon Redshift](sources/star-schema-nps.png)
+![Star schema NPS en Amazon Redshift](star-schema-nps.png)
 
 ---
 
@@ -191,3 +191,4 @@ Las **dimensiones pueden variar con el tiempo**, por lo que se debe definir la e
 
 📘 **Última actualización:** Octubre 2025  
 ✍️ **Autor:** Luis Méndez – Practicante de Data Science, Insalud
+
